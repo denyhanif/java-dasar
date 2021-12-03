@@ -1,16 +1,14 @@
-class Shape {
-    int getCorner(){
-        return 0;
-    }
-}
+package superKeyword.data;
 
-class Rectangel extends Shape{
+
+
+public class Rectangle extends Shape{
     @Override
-    int getCorner() {
+    public  int getCorner() {
         return 4;
     }
 
-    int getParentCorner(){
+    public int getParentCorner(){
             /*
             KEYWORD SUPER
             digunakan untuk mengakses

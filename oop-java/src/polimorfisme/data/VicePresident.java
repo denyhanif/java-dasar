@@ -1,12 +1,14 @@
-class VicePresident extends Manager {
+package polimorfisme.data;
+
+public class VicePresident extends Manager {
     /*
     Mthod overiding menimpa metod dari class parent
     dengan nama dan param sama tapi body ny bisa beda
      */
-    VicePresident(String name){
+    public VicePresident(String name){
         super(name);
     }
-    void sayHello(String name){
+    public void sayHello(String name){
         System.out.println(
                 "HI "+name+" ,My name is Vp " +this.name);
     }

@@ -1,7 +1,7 @@
-package ini.contoh.java.app;
+package Abstract.app;
 
-import ini.contoh.java.data.Animal;
-import ini.contoh.java.data.Cat;
+import Abstract.data.Animal;
+import Abstract.data.Cat;
 
 public class AnimalApp {
     public static void main(String[] args) {

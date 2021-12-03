@@ -1,4 +1,4 @@
-package ini.contoh.java.data;
+package Abstract.data;
 
 public class Cat extends Animal {
 

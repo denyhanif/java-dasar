@@ -1,3 +1,9 @@
+package polimorfisme.app;
+
+import polimorfisme.data.Employee;
+import polimorfisme.data.*;
+
+
 public class PolymorphismApp {
     public static void main(String[] args) {
         //
@@ -58,7 +64,7 @@ public class PolymorphismApp {
             VicePresident inivicePresident = (VicePresident) employee;
             System.out.println("hello vp "+ inivicePresident.name);
         }
-        else if(employee instanceof Manager ){
+        else if(employee instanceof Manager){
             Manager imanager = (VicePresident) employee;
             System.out.println("hello manager "+imanager.name);
         }

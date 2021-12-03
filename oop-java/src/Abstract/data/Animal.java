@@ -1,4 +1,4 @@
-package ini.contoh.java.data;
+package Abstract.data;
 
 public abstract class Animal {
     public String name;

@@ -9,6 +9,6 @@ public class CategoryApp {
         categ.setId(null);
 
         System.out.println(categ.getId());
-        //output akan tetap ID karena null akan di reject pada method setid 
+        //output akan tetap ID karena null akan di reject pada method setid
     }
 }

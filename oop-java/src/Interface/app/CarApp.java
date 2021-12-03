@@ -8,9 +8,12 @@ public class CarApp {
 
         Datsun datsu = new Datsun();
         datsu.drive();
+        datsu.isMaintenance();
         //Car car = new Car(); Car eroor tidak bisa di instansi karn ainterface
         //agar Car bisa di intenace guankan polomorfisme
         Car car= new Datsun();//polomorfisme
         car.getTier();
+        car.getBrands();
+
     }
 }

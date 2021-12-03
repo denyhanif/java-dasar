@@ -1,2 +1,6 @@
-package Interface.data;public interface HasBrand {
+package Interface.data;
+
+public interface HasBrand {
+
+    String getBrands();
 }

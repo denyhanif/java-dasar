@@ -1,2 +1,5 @@
-package Interface.data;public interface IsMaintenance {
+package Interface.data;
+
+public interface IsMaintenance {
+    boolean isMaintenance();
 }

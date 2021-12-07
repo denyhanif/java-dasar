@@ -4,7 +4,7 @@ public class todoo {
      */
     public  static String[] model= new String[10];
     public static void main(String[] args) {
-        testAddTodoList();
+        testRemoveTodoList();
 
 
     }
@@ -76,8 +76,38 @@ public class todoo {
     /**
      * Hapus
      */
-    public static void removeTodoList(){
+    public static boolean removeTodoList(int number){
+        if((number-1) >=model.length){
+            return false;
+        }else if(model[number-1]==null){
+            //apakah data index yang di maksud null
+            return false;
+            //false karna tidak ada yg bisa di hapus
+        }else {
+            for(int i =(number-1);i<model.length;i++){
+                if(i ==(model.length -1)){
+                    model[i] =null;
+                }else {
+                    model[i]=model[i+1];
+                }
 
+            }
+            return true;
+        }
+    }
+    public static void testRemoveTodoList(){
+        addTodoList("satu");
+        addTodoList("dua");
+        addTodoList("tiga");
+        addTodoList("empat");
+        addTodoList("lima");
+        var hasil = removeTodoList(20);
+        System.out.println(hasil);
+
+        hasil =removeTodoList(2);
+        System.out.println(hasil);
+
+        showTodoList();
     }
     /**
      * View Tampilan toDo list

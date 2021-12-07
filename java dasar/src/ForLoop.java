@@ -5,9 +5,12 @@ public class ForLoop {
             System.out.println("Perulanagan" + counter);
         }
         //var count=0;
-        for (var count=0; count<= 10;count++){
-            System.out.println("perulang" + count);
+        //pos statment tidak di jalankan saat pertama kali
+        for (var count=1; count<= 10;count += 1){
             count++;
+            System.out.println("perulang" + count);
+
+//2 4 6 8
         }
     }
 }

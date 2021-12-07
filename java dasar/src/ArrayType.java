@@ -4,8 +4,19 @@ public class ArrayType {
         String [] arrayStrinng;
 
         arrayStrinng= new String[3];
+        //System.out.println(" array string "+ arrayStrinng);
 
         String[] arrayString2= new String[3];
+        Integer[] arrayInteg = new Integer[3];
+
+        arrayInteg[0]=10;
+        arrayInteg[1]=20;
+
+        System.out.println(arrayInteg[1]);
+        System.out.println("aray integr");
+        for (var printarInteg : arrayInteg){
+            System.out.println(printarInteg +",");
+        }
 
         arrayString2[0]= "Deny";
         arrayString2[1]= "ny";

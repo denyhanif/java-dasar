@@ -9,6 +9,11 @@ public class EnumApp {
         System.out.println(customer.getName());
         System.out.println(customer.getLevel());
 
+
         System.out.println(customer.getLevel().getDesc());
     }
+    /**
+     *
+     */
+
 }

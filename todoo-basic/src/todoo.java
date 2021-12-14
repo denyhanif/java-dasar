@@ -5,7 +5,7 @@ public class todoo {
     public  static String[] model= new String[10];
     public static java.util.Scanner scanner = new java.util.Scanner(System.in);
     public static void main(String[] args) {
-        testInput();
+        testViewAddTodoList();
 
 
     }
@@ -149,12 +149,24 @@ public class todoo {
      * View Tambah toDo list
      */
     public static void viewAddTodoList(){
+        System.out.println("Menambah Todolist");
+
+        String todo = input("Todo (x unutk batal)");
+
+        if(todo.equals("x")){
+            //batal
+        }else {
+            addTodoList(todo);
+        }
 
 
 
     }
      public static void testViewAddTodoList(){
+        addTodoList("satu");
+        addTodoList("dua");
         viewAddTodoList();
+        showTodoList();
      }
 
     /**

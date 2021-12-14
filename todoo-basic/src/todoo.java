@@ -174,6 +174,31 @@ public class todoo {
      */
     public static void viewRemoveShowTodoList(){
 
+        System.out.println("menghapus todolist");
+
+        var number = input("Nomor yang ingin di hapus:");
+
+        if(number.equals("x")){
+
+
+        }else{
+            boolean success = removeTodoList(Integer.valueOf(number));
+            if(!success){
+                System.out.println("Gagal hapus todo"+number);
+            }
+
+        }
+
+
     }
 
+    public static void testViewRemoveTodolist(){
+        addTodoList("aaaa");
+        addTodoList("bbb");
+        addTodoList("ccc");
+
+        showTodoList();
+        viewRemoveShowTodoList();
+        showTodoList();
+    }
 }

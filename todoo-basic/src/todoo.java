@@ -5,7 +5,7 @@ public class todoo {
     public  static String[] model= new String[10];
     public static java.util.Scanner scanner = new java.util.Scanner(System.in);
     public static void main(String[] args) {
-        testViewAddTodoList();
+        viewShowTodoList();
 
 
     }
@@ -200,5 +200,6 @@ public class todoo {
         showTodoList();
         viewRemoveShowTodoList();
         showTodoList();
+
     }
 }

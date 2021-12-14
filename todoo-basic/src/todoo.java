@@ -3,8 +3,9 @@ public class todoo {
      * \model = variabel array utk menapung to do
      */
     public  static String[] model= new String[10];
+    public static java.util.Scanner scanner = new java.util.Scanner(System.in);
     public static void main(String[] args) {
-        testRemoveTodoList();
+        testInput();
 
 
     }
@@ -109,11 +110,39 @@ public class todoo {
 
         showTodoList();
     }
+
+    public static String input(String info){
+        System.out.print(info +" : ");
+        String data= scanner.nextLine();
+        return data;
+    }
+    public static void testInput(){
+        var data=input("Nama");
+        System.out.println("HI "+data);
+    }
     /**
      * View Tampilan toDo list
      */
 
     public static void viewShowTodoList(){
+        while (true){
+            showTodoList();
+            System.out.println("Menu");
+            System.out.println("1. Tambah");
+            System.out.println("2. Hapus");
+            System.out.println("3. Keluar");
+
+            var input = input("Pilih");
+            if (input.equals("1")){
+                viewAddTodoList();
+            }else if(input.equals("2")){
+                viewRemoveShowTodoList();
+            }else if(input.equals("3")){
+                break;
+            }else {
+                System.out.println("pilihan salah");
+            }
+        }
 
     }
     /**
@@ -121,11 +150,17 @@ public class todoo {
      */
     public static void viewAddTodoList(){
 
+
+
     }
+     public static void testViewAddTodoList(){
+        viewAddTodoList();
+     }
+
     /**
      * View Remove toDo list
      */
-    public static void removeShowTodoList(){
+    public static void viewRemoveShowTodoList(){
 
     }
 

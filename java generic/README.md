@@ -9,13 +9,13 @@ misal kita memiliki kelas koleksiString, koleksiInteger dan kolokesiDouble, deng
 </Li>
 </ul>
 
-###Manfaat
+### Manfaat
 <ul>
 <li>pengecekan tipedata saat proses kompilasi</li>
 <li>memudahkan membuat kode program yang gneric sehingga dapat digunakan oleh berbagai tipe data</li>
 </ul>
 
-###Manfaat 
+### Kesimpulan 
 dengan generic dapat mebuat class/object yang dapat menampung banyak tipedata
  
 

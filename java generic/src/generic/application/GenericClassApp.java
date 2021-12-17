@@ -19,7 +19,7 @@ public class GenericClassApp {
          *Instansiasi generic class
          * obj MyData menerima param<Integer> parameter harus bersifat object / tipe bukan primitif
          */
-        MyData<Integer> dataInteg= new MyData<Integer>(12);
+        MyData<Integer> dataInteg= new MyData<>(12);
 
         String nilaiString = dataString.getData();
         Integer nilaiInteger = dataInteg.getData();

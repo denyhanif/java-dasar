@@ -8,7 +8,7 @@ public class MultiParamApp {
          * Class generic juga dapat menerima lebih dari satu param
          * asalkan nama param nya berbeda
          */
-        MultipleParamGeneric<String ,Integer> dataku = new MultipleParamGeneric<String,Integer>("Deny",19);
+        MultipleParamGeneric<String ,Integer> dataku = new MultipleParamGeneric<>("Deny",19);
         MultipleParamGeneric<String ,String> data2 = new MultipleParamGeneric<String,String>("Deny","HAnif");
 
         System.out.println(dataku.getData1());

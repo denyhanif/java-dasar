@@ -21,3 +21,12 @@ dengan generic dapat mebuat class/object yang dapat menampung banyak tipedata
 
 ## Multiple Param Generic
 Class generic juga dapat menerima lebih dari satu param ,asalkan nama param nya berbeda
+
+## Invariant
+<ul>
+<li>tipe dari object tidak bisa diubah misal saat instansiasi</li>
+<li>Hanya bisa diakses di method tersebut saja
+</li>
+<li>digunakan ketika membuat generic tanpa mengubah tipe class menjadi generic</li>
+<li>todak dapat menggunakan polimorfisme</li>
+</ul>
